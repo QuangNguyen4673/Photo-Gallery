@@ -1,20 +1,15 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import About from "./components/About";
 import Shop from "./components/Shop";
+import Title from "./components/Title";
+
 function App() {
   return (
     <>
       <Router>
-        <ul>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/shop">shop</Link>
-          </li>
-        </ul>
-
+        <Title />
         <Switch>
+          <Route exact path="/" component={About} />
           <Route path="/about" component={About} />
           <Route path="/shop" component={Shop} />
         </Switch>
