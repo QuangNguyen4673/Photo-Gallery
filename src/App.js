@@ -1,20 +1,16 @@
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import About from "./components/About";
-import Shop from "./components/Shop";
+import ImageGrid from "./components/ImageGrid";
+import Modals from "./components/Modals";
 import Title from "./components/Title";
-
+import UploadForm from "./components/UploadForm";
+import { useState } from "react";
 function App() {
+  const [imgUrl, setimgUrl] = useState("");
   return (
     <>
-      <Router>
-        <Title />
-        <Switch>
-          <Route exact path="/" component={About} />
-          <Route path="/about" component={About} />
-          <Route path="/shop" component={Shop} />
-        </Switch>
-      </Router>
-      ;
+      <Title />
+      <UploadForm />
+      <ImageGrid setimgUrl={setimgUrl} />
+      {imgUrl && <Modals url={imgUrl} setimgUrl={setimgUrl} />}
     </>
   );
 }

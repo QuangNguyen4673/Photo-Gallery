@@ -1,10 +1,18 @@
+@use "../abstract" as *;
 .title {
   h2 {
     margin-left: 12%;
+    color: $error;
   }
   h1,
   div {
     text-align: center;
-    margin-bottom: 0.7rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .foo {
+    width: 80%;
   }
 }

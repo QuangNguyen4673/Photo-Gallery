@@ -1,0 +1,29 @@
+@use "../abstract" as *;
+
+.image-grid-container {
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 0.5rem;
+  .grid-one,
+  .grid-two,
+  .grid-three {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+@media (min-width: $screen-md) {
+  .image-grid-container {
+    width: 85%;
+  }
+}
+@media (min-width: $screen-lg) {
+  .image-grid-container {
+    width: 80%;
+  }
+}

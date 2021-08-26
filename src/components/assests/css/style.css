@@ -1,19 +1,114 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap");
 .title h2 {
   margin-left: 12%;
+  color: #ff4a4a;
 }
-
 .title h1,
 .title div {
   text-align: center;
-  margin-bottom: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .foo {
+    width: 80%;
+  }
+}
+.img-upload {
+  margin-bottom: 3rem;
+}
+.img-upload h5 {
+  text-align: center;
+}
+.img-upload input[type=file] {
+  display: none;
+}
+.img-upload label {
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.img-upload label .icon-container {
+  padding: 0.8rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 100ms;
+}
+.img-upload label .icon-container:hover {
+  background-color: #efb6b2;
+}
+.img-upload label svg {
+  font-size: 1.5rem;
+}
+.img-upload .my-progress-bar {
+  display: block;
+  height: 0.8rem;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+  background-color: grey;
+}
+.img-upload .my-progress-bar-current {
+  height: 100%;
+  background-color: blue;
+}
+
+.image-grid-container {
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 0.5rem;
+}
+.image-grid-container .grid-one,
+.image-grid-container .grid-two,
+.image-grid-container .grid-three {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+.image-grid-container img {
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .image-grid-container {
+    width: 85%;
+  }
+}
+@media (min-width: 992px) {
+  .image-grid-container {
+    width: 80%;
+  }
+}
+.img-modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-modal img {
+  border: 3px solid #fff;
+  max-width: 60%;
+  max-height: 80%;
 }
 
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Noto Serif JP", serif;
 }
+
 /*# sourceMappingURL=style.css.map */

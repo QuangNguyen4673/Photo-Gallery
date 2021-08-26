@@ -1,0 +1,47 @@
+@use '../abstract/' as *;
+.img-upload {
+  margin-bottom: 3rem;
+  h5 {
+    text-align: center;
+  }
+  input[type="file"] {
+    display: none;
+  }
+  label {
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    .icon-container {
+      padding: 0.8rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background-color: #fff;
+      border: 3px solid rgba($color: #000000, $alpha: 0.2);
+      cursor: pointer;
+      transition: background-color 100ms;
+      &:hover {
+        background-color: $primary;
+      }
+    }
+    svg {
+      font-size: 1.5rem;
+    }
+  }
+  .my-progress-bar {
+    display: block;
+    height: 0.8rem;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+    background-color: grey;
+    &-current {
+      height: 100%;
+      background-color: blue;
+    }
+  }
+}

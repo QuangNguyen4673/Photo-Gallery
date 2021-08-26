@@ -1,10 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AACA,OAAO,CAAC,uFAAI;ACDZ,AACE,MADI,CACJ,EAAE,CAAC;EACD,WAAW,EAAE,GAAG;CACjB;;AAHH,AAIE,MAJI,CAIJ,EAAE;AAJJ,MAAM,CAKJ,GAAG,CAAC;EACF,UAAU,EAAE,MAAM;EAClB,aAAa,EAAE,MAAM;CACtB;;ADLH,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;EACtB,WAAW,EAAE,sBAAsB;CACpC",
-    "sources": [
-        "../scss/style.scss",
-        "../scss/components/_title.scss"
-    ],
-    "names": [],
-    "file": "style.css"
-}
+{"version":3,"sourceRoot":"","sources":["../scss/style.scss","../scss/components/_title.scss","../scss/abstract/_color.scss","../scss/components/_uploadform.scss","../scss/components/_image-grid.scss","../scss/components/_image-modal.scss"],"names":[],"mappings":"AAIQ;ACFN;EACE;EACA,OCFI;;ADIN;AAAA;EAEE;EACA;;;AAIJ;EACE;IACE;;;AEdJ;EACE;;AACA;EACE;;AAEF;EACE;;AAEF;EACE;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;;AACA;EACE,kBD3BE;;AC8BN;EACE;;AAGJ;EACE;EACA;EACA;EACA;EACA;EACA;;AACA;EACE;EACA;;;ACzCN;EACE;EACA;EACA;EACA;EACA;;AACA;AAAA;AAAA;EAGE;EACA;EACA;;AAEF;EACE;;;AAGJ;EACE;IACE;;;AAGJ;EACE;IACE;;;AC1BJ;EACE;EACA;EACA;EACA;EACA;EACA;EAEA;EACA;EACA;;AACA;EACE;EACA;EACA;;;ALRJ;EACE;EACA;EACA;EACA","file":"style.css"}
